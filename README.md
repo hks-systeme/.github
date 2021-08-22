@@ -1,6 +1,6 @@
 # .github
 
-[![Integrate](https://github.com/hks-systeme/.github/workflows/Integrate/badge.svg?branch=main)](https://github.com/hks-systeme/.github/actions)
+[![Integrate](https://github.com/hks-systeme/.github/workflows/Integrate/badge.svg)](https://github.com/hks-systeme/.github/actions)
 
 Provides community health files for the [@hks-systeme](https://github.com/hks-systeme) organization.
 
