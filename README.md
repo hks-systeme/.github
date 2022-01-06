@@ -2,6 +2,7 @@
 
 [![Integrate](https://github.com/hks-systeme/.github/workflows/Integrate/badge.svg)](https://github.com/hks-systeme/.github/actions)
 [![Merge](https://github.com/hks-systeme/.github/workflows/Merge/badge.svg)](https://github.com/hks-systeme/.github/actions)
+[![Release](https://github.com/hks-systeme/.github/workflows/Release/badge.svg)](https://github.com/hks-systeme/.github/actions)
 [![Triage](https://github.com/hks-systeme/.github/workflows/Triage/badge.svg)](https://github.com/hks-systeme/.github/actions)
 
 Provides community health files for the [@hks-systeme](https://github.com/hks-systeme) organization.
