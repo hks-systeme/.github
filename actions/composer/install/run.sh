@@ -1,23 +1,32 @@
 #!/usr/bin/env bash
 
-if [[ ${COMPOSER_INSTALL_DEPENDENCIES} == "lowest" ]]; then
-  composer update --ansi --no-interaction --no-progress --prefer-lowest --working-dir="${COMPOSER_WORKING_DIRECTORY}"
+dependencies="${COMPOSER_INSTALL_DEPENDENCIES}"
+workingDirectory="${COMPOSER_INSTALL_WORKING_DIRECTORY}"
 
-  exit $?
+if [[ ! -d ${workingDirectory} ]]; then
+  echo "::error::The value for the \"working-directory\" input needs to be an existing directory. The directory \"${workingDirectory}\" does not exist."
+
+  exit 1;
 fi
 
-if [[ ${COMPOSER_INSTALL_DEPENDENCIES} == "locked" ]]; then
-  composer install --ansi --no-interaction --no-progress --working-dir="${COMPOSER_WORKING_DIRECTORY}"
+if [[ ${dependencies} == "lowest" ]]; then
+    composer update --ansi --no-interaction --no-progress --prefer-lowest -working-dir="${workingDirectory}"
 
-  exit $?
+    exit $?
 fi
 
-if [[ ${COMPOSER_INSTALL_DEPENDENCIES} == "highest" ]]; then
-  composer update --ansi --no-interaction --no-progress --working-dir="${COMPOSER_WORKING_DIRECTORY}"
+if [[ ${dependencies} == "locked" ]]; then
+    composer install --ansi --no-interaction --no-progress -working-dir="${workingDirectory}"
 
-  exit $?
+    exit $?
 fi
 
-echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\"', \"highest\"' - got \"${COMPOSER_INSTALL_DEPENDENCIES}\" instead."
+if [[ ${dependencies} == "highest" ]]; then
+    composer update --ansi --no-interaction --no-progress -working-dir="${workingDirectory}"
+
+    exit $?
+fi
+
+echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\", \"highest\" - got \"${dependencies}\" instead."
 
 exit 1
