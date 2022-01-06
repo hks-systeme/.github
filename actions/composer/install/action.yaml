@@ -1,0 +1,25 @@
+# https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
+name: "Install dependencies with composer"
+
+description: "Installs dependencies with composer"
+
+inputs:
+  dependencies:
+    description: "Which dependencies to install, one of \"lowest\", \"locked\", \"highest\""
+    required: true
+  working-directory:
+    description: "Which directory to use as working directory"
+    required: false
+    default: "."
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: "Install ${{ inputs.dependencies }} dependencies with composer"
+      shell: "bash"
+      run: "${{ github.action_path }}/run.sh"
+      env:
+        COMPOSER_INSTALL_DEPENDENCIES: "${{ inputs.dependencies }}"
+        COMPOSER_WORKING_DIRECTORY: "${{ inputs.working-directory }}"
