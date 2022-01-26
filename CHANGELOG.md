@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1.0.1...main`][1.0.1...main].
+For a full diff see [`1.1.0...main`][1.1.0...main].
+
+## [`1.1.0`][1.1.0]
+
+For a full diff see [`1.0.1...1.1.0`][1.0.1...1.1.0].
+
+### Added
+
+- Imported composite actions from [`ergebnis/.github`](https://github.com/ergebnis/.github/tree/1.3.2) ([#20]), by [@localheinz]
 
 ## [`1.0.1`][1.0.1]
 
@@ -26,12 +34,15 @@ For a full diff see [`1.0.0...main`][1.0.0...main].
 
 [1.0.0]: https://github.com/hks-systeme/.github/releases/tag/1.0.0
 [1.0.1]: https://github.com/hks-systeme/.github/releases/tag/1.0.1
+[1.1.0]: https://github.com/hks-systeme/.github/releases/tag/1.1.0
 
 [c45f220...1.0.0]: https://github.com/hks-systeme/.github/compare/c45f220...1.0.0
 [1.0.0...1.0.1]: https://github.com/hks-systeme/.github/compare/1.0.0...1.0.1
-[1.0.1...main]: https://github.com/hks-systeme/.github/compare/1.0.1...main
+[1.0.1...1.1.0]: https://github.com/hks-systeme/.github/compare/1.0.1...1.1.0
+[1.1.0...main]: https://github.com/hks-systeme/.github/compare/1.1.0...main
 
 [#15]: https://github.com/hks-systeme/.github/pull/15
 [#19]: https://github.com/hks-systeme/.github/pull/19
+[#20]: https://github.com/hks-systeme/.github/pull/20
 
 [@localheinz]: https://github.com/localheinz
