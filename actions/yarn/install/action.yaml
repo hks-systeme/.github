@@ -1,0 +1,26 @@
+# https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+# https://classic.yarnpkg.com/en/
+
+name: "Install dependencies with yarn"
+
+description: "Installs dependencies with yarn"
+
+inputs:
+  dependencies:
+    description: "Which dependencies to install, one of \"locked\", \"highest\""
+    required: true
+  working-directory:
+    default: "."
+    description: "Which directory to use as working directory"
+    required: false
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: "Install ${{ inputs.dependencies }} dependencies with yarn"
+      shell: "bash"
+      run: "${{ github.action_path }}/run.sh"
+      env:
+        YARN_INSTALL_DEPENDENCIES: "${{ inputs.dependencies }}"
+        YARN_WORKING_DIRECTORY: "${{ inputs.working-directory }}"
