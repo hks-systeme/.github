@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1.2.0...main`][1.2.0...main].
+For a full diff see [`1.3.0...main`][1.3.0...main].
+
+## [`1.3.0`][1.3.0]
+
+For a full diff see [`1.2.0...1.3.0`][1.2.0...1.3.0].
+
+### Added
+
+- Added composite actions for determining the `npm` cache directory and installing dependencies with `npm` ([#24]), by [@localheinz]
 
 ## [`1.2.0`][1.2.0]
 
@@ -55,5 +63,6 @@ For a full diff see [`1.0.0...main`][1.0.0...main].
 [#19]: https://github.com/hks-systeme/.github/pull/19
 [#20]: https://github.com/hks-systeme/.github/pull/20
 [#22]: https://github.com/hks-systeme/.github/pull/22
+[#24]: https://github.com/hks-systeme/.github/pull/24
 
 [@localheinz]: https://github.com/localheinz
