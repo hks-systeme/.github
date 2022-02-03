@@ -1,0 +1,13 @@
+# https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
+name: "Determine npm cache directory"
+
+description: "Determines the npm cache directory and exports it as NPM_CACHE_DIR environment variable"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: "Determine npm cache directory"
+      shell: "bash"
+      run: "echo \"NPM_CACHE_DIR=$(npm config get cache)\" >> $GITHUB_ENV"
