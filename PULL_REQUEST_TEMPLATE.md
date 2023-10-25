@@ -5,8 +5,8 @@
 ### :clipboard: Definition of Done Checklist
 
 - [ ] All cases of poor naming/readability/understandability in the changed files have been exposed by the reviewers
-- [ ] All possibly breaking changes have been mentioned here AND in `UPGRADE.md`
-- [ ] All changes relevant to installation and setup are reflected in `DEVELOPMENT.md`, `PRODUCTION.md`, and `UPGRADE.md`
+- [ ] All possibly breaking changes have been mentioned
+- [ ] All changes relevant to installation and setup are reflected in `DEVELOPMENT.md` and `PRODUCTION.md`
 - [ ] The changes have passed user-acceptance testing (if required by the originating issue)
 
 ### Breaking changes
