@@ -9,6 +9,12 @@
 - [ ] All changes relevant to installation and setup are reflected in `DEVELOPMENT.md`, `PRODUCTION.md`, and `UPGRADE.md`
 - [ ] The changes have passed user-acceptance testing (if required by the originating issue)
 
+### Breaking changes
+
+>[!WARNING]
+>
+>
+
 ### References
 
 Follows #.
