@@ -1,6 +1,6 @@
-### Describe the changes made by this PR
+### :construction: Describe the changes made by this PR
 
-- [x] 
+- [x]
 
 ### :clipboard: Definition of Done Checklist
 
@@ -9,13 +9,13 @@
 - [ ] All changes relevant to installation and setup are reflected in `DEVELOPMENT.md` and `PRODUCTION.md`
 - [ ] The changes have passed user-acceptance testing (if required by the originating issue)
 
-### Breaking changes
+### :axe: Breaking changes
 
 >[!WARNING]
 >
 >
 
-### References
+### :link: References
 
 Follows #.
 Related to #.
